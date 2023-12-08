@@ -90,6 +90,5 @@ i++;
 i++;
 }
 va_end(arg);
-_putchar('\n');
 return (0);
 }
