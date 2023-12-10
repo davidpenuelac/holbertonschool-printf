@@ -89,7 +89,11 @@ int r = va_arg(arg, int);
 _putint(r);
 }
 else
+{
+_putchar('%');
+i++;
 continue;
+}
 i++;
 }
 i++;
