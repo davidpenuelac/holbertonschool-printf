@@ -55,7 +55,7 @@ int i = 0;
 
 va_start(arg, format);
 if (format == NULL)
-return (0);
+return (i);
 while (format[i] != '\0')
 {
 if (format[i] != '%')
