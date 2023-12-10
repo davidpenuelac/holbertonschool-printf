@@ -1,5 +1,6 @@
 #include <unistd.h>
 #include <stdarg.h>
+#include <stdlib.h>
 #include "main.h"
 
 int _putchar(char c);
@@ -53,10 +54,10 @@ va_list arg;
 int i = 0;
 
 va_start(arg, format);
+if (format == NULL)
+return (0);
 while (format[i] != '\0')
 {
-if (format[i] == NULL)
-break;
 if (format[i] != '%')
 {
 _putchar(format[i]);
