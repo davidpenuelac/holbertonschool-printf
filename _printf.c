@@ -55,6 +55,8 @@ int i = 0;
 va_start(arg, format);
 while (format[i] != '\0')
 {
+if (format[i] == NULL)
+break;
 if (format[i] != '%')
 {
 _putchar(format[i]);
@@ -85,6 +87,8 @@ else if ((format[i + 1] == 'd') || (format[i + 1] == 'i'))
 int r = va_arg(arg, int);
 _putint(r);
 }
+else
+continue;
 i++;
 }
 i++;
