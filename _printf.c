@@ -88,6 +88,8 @@ else if ((format[i + 1] == 'd') || (format[i + 1] == 'i'))
 int r = va_arg(arg, int);
 _putint(r);
 }
+else if (format[i + 1] == '\0')
+break;
 else
 {
 _putchar('%');
