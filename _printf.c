@@ -52,6 +52,7 @@ int _printf(const char *format, ...)
 {
 va_list arg;
 int i = 0;
+int n = 0;
 
 va_start(arg, format);
 if (format == NULL)
@@ -99,7 +100,8 @@ continue;
 i++;
 }
 i++;
+n++;
 }
 va_end(arg);
-return (i);
+return (n);
 }
