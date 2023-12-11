@@ -82,6 +82,7 @@ while (str[j] != '\0')
 {
 _putchar(str[j]);
 j++;
+n++;
 }
 }
 else if ((format[i + 1] == 'd') || (format[i + 1] == 'i'))
